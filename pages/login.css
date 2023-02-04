@@ -46,3 +46,7 @@ body {
     font-size: 1.2rem;
     color: #fff;
   }
+
+  .gradient-custom {
+    background: linear-gradient(to bottom, #7b4397, #dc2430);
+  }
