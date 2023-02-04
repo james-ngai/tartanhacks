@@ -1,0 +1,27 @@
+html {
+    scroll-padding-top: 70px;
+}
+body {
+    padding-top: 70px;
+}
+td {
+    font-size: 15pt;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.icon {
+    text-decoration: none
+}
+.bs-github-icon {
+    font-size: 2rem; color: black;
+}
+.bs-linkedin-icon {
+    font-size: 2rem; color: #0e76a8;
+}
+.bs-email-icon {
+    font-size: 2rem; color: gray;
+}
