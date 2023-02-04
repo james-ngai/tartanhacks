@@ -128,12 +128,16 @@
     </div>
     <hr class="dark space-y-1 border-1 border-nord3">
   </nav>
+  <form class = items-center action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form>
   <div class="dark h-4/5 flex flex-col justify-center items-center border-3" method="GET">
     <form action="beyous.html" class="dark w-4/5 h-4/5 px-20 py-10 flex flex-col justify-center space-y-8" method="GET" id="addbeyou">
       <div class="dark space-x-2 flex flex-row">
       </div>
 
-  
+      
       <div class="flex flex-col justify-between space-y-3">
         <textarea id="message" rows="4" style="resize: none;"
           class="text-xl block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-nord2 focus:ring-nord2 focus:border-nord2 dark:bg-nord1 dark:border-nord0 dark:placeholder-gray-400 dark:text-nord8"
@@ -201,46 +205,9 @@
     appId: "1:718679255077:web:a5d19b54e474a1d968b7cc",
     measurementId: "G-FVD7M6CJ1Z"
   };
- 
-const app = initializeApp(firebaseConfig);
 
-var postDatabase = getDatabase(app);
 
-document.getElementById('addbeyou').addEventListener('submit', submit);
 
-function submit(e)
-{
-    e.preventDefault();
-
-    var date = new Date();
-    var type = document.getElementById("typeText").innerText;
-    var text = document.getElementById("message").value;
-    var value = document.getElementById("valueControl").value;
-    var location = "Tepper";
-    var time  = date.toLocaleDateString() + ", " + date.toLocaleTimeString();
-    console.log('working');
-    saveMessages(location, type, value, text, time);
-}
-
-const saveMessages = (location, type, value, text, time) => 
-{
-    var newPost = push(child(ref(postDatabase), 'Posts'));
-
-    set(newPost,{
-        location: location,
-        type:type,
-        text:text,
-        value:value,
-        time: time,
-    }).then(function(){
-      window.location = "beyous.html?" + "value=" + value;
-    });
-
-};
-
-const getElementVal = (id) => {
-    return document.getElementById(id).value;
-};
 </script>
 </body>
 
