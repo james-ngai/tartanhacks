@@ -1,0 +1,48 @@
+body {
+    background-color: #36393F;
+  }
+  
+  .card {
+    background-color: #2C2F33;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-outline {
+    position: relative;
+  }
+  
+  .form-label {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.2rem;
+    color: #B9BBBE;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input[type="email"], input[type="password"] {
+    font-size: 1.5rem;
+    padding: 2rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #2C2F33;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #7289DA;
+  }
+  
+  input[type="email"]:focus + .form-label, input[type="password"]:focus + .form-label {
+    top: 0.75rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  input[type="email"]:not(:placeholder-shown) + .form-label, input[type="password"]:not(:placeholder-shown) + .form-label {
+    top: 0.75rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
