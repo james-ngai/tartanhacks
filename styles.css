@@ -125,3 +125,7 @@ input:valid + .form-label {
 .bs-email-icon {
     font-size: 2rem; color: gray;
 }
+
+.button2 {background-color: #36393F; color: #DCDFE4;} /* Blue */
+
+.filelol {color: #DCDFE4;}

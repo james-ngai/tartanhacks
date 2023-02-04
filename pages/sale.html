@@ -55,19 +55,25 @@
       <form action="beyous.html" class="dark w-4/5 h-4/5 px-20 py-10 flex flex-col justify-center space-y-8" method="GET" id="addbeyou">
         <div class="dark space-x-2 flex flex-row">
         </div>
-  
+
         
         <div class="flex flex-col justify-between space-y-3">
+          <textarea id="message" rows="1" style="resize: none;"
+            class="text-xl block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-nord2 focus:ring-nord2 focus:border-nord2 dark:bg-nord1 dark:border-nord0 dark:placeholder-gray-400 dark:text-nord8"
+            placeholder="Name of Item"></textarea>
           <textarea id="message" rows="4" style="resize: none;"
             class="text-xl block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-nord2 focus:ring-nord2 focus:border-nord2 dark:bg-nord1 dark:border-nord0 dark:placeholder-gray-400 dark:text-nord8"
-            placeholder="Description of item"></textarea>
+            placeholder="Description of Item"></textarea>
+          <textarea id="message" rows="4" style="resize: none;"
+            class="text-xl block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-nord2 focus:ring-nord2 focus:border-nord2 dark:bg-nord1 dark:border-nord0 dark:placeholder-gray-400 dark:text-nord8"
+            placeholder="Contact Information"></textarea>
           <div class="flex flex-row justify-between">
             <div class="flex flex-row justify-left around space-x-0.5 text-nord6">
             </div>
-            <input type="file" id="myFile" name="filename">
+            <input class = "filelol" type="file" id="myFile" name="filename">
            
-            <button type="submit"
-              class="text-nord6 bg-gradient-to-r from-nord8 to-nord9 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-nord8 dark:focus:ring-nord9 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Submit</button>
+            <button type="file"
+              class="text-nord6 bg-gradient-to-r from-nord8 to-nord9 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-nord8 dark:focus:ring-nord9 font-medium rounded-lg text-sm px-5 py-2.5 text-center button2">Submit</button>
           </div>
         </div>
       </form>
