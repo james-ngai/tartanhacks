@@ -83,7 +83,58 @@
     <footer class="flex flex-1 flex-col justify-center items-center text-center">
     </footer>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-    
+    <script>
+      var range = document.getElementById("valueControl");
+      var type = document.getElementById("typeText");
+      var message = document.getElementById("message");
+      var characters = document.getElementById("characters");
+      var characterLabel = document.getElementById("characterLabel");
+      var types = ["BeSad.", "BeDown.", "BeContent.", "BeHappy.", "BeEcstatic."];
+  
+      range.addEventListener("input", changeType);
+  
+      function changeType() {
+        if (range.value < 20) {
+          type.innerText = types[0];
+        } else if (range.value < 40) {
+          type.innerText = types[1];
+        } else if (range.value < 60) {
+          type.innerText = types[2];
+        } else if (range.value < 80) {
+          type.innerText = types[3];
+        } else {
+          type.innerText = types[4];
+        }
+      }
+  
+      message.addEventListener("input", changeCharacterCount);
+  
+      function changeCharacterCount() {
+        characters.innerText = message.value.length;
+        if (message.value.length == 1) {
+          characterLabel.innerText = "character";
+        } else {
+          characterLabel.innerText = "characters";
+        }
+      }
+    </script>
+
+    <script>
+  const fileE1 = document.getElementById('myFile');
+
+  fileE1.addEventListener('change', () => {
+
+      const fr = new FileReader();
+
+      fr.readAsDataURL(fileE1.files[0]);
+
+      fr.addEventListener('load', () => {
+          const url = fr.result;
+          localStorage.setItem('my-image', url);
+      })
+  })
+
+    </script>
   
   </body>
   
