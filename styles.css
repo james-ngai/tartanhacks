@@ -1,37 +1,125 @@
-html {
-    scroll-padding-top: 70px;
+header {
+    color: #36393F;
 }
+
 body {
-    padding-top: 70px;
+    background-color: #2C2F33;
+    color: #36393F;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-td {
-    font-size: 15pt;
+
+.navbar {
+    background-color: #7289DA;
+    color: #36393F;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+
+.navbar-brand {
+    color: #36393F;
 }
-.icon {
-    text-decoration: none
+
+.navbar-nav .nav-link {
+    color: #36393F;
 }
-.bs-github-icon {
-    font-size: 2rem; color: black;
+
+.navbar-nav .nav-link:hover {
+    background-color: #7289DA;
 }
-.bs-linkedin-icon {
-    font-size: 2rem; color: #0e76a8;
+
+.section {
+    background-color: #36393F;
+    color: #DCDFE4;
 }
-.bs-email-icon {
-    font-size: 2rem; color: gray;
+
+.title h1 {
+    color: #7289DA;
 }
+
+.lead {
+    font-size: 1.25rem;
+}
+
+.img-fluid {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #36393F;
+    color: #36393F;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.form-control-lg {
+    height: 56px;
+    padding: 20px;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+}
+
+.form-outline {
+    border: 1px solid #36393F;
+}
+
+.form-white {
+    background-color: #36393F;
+}
+
+.form-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    pointer-events: none;
+    color: #36393F;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-out;
+}
+
+input:focus + .form-label,
+input:valid + .form-label {
+    top: -10px;
+    font-size: 0.875rem;
+    color: #36393F;
+}
+
 .gradient-custom {
-    /* fallback for old browsers */
-    background: #6a11cb;
+    background: linear-gradient(to bottom, #7b4397, #dc2430);
+}
 
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #dc2430;
+}
 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+.navbar-light .navbar-nav .nav-link {
+    color: #dc2430;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #7b4397;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #7b4397;
+}
+
+.card {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
 }
