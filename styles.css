@@ -1,3 +1,7 @@
+html {
+    padding-top: 70px;
+}
+
 header {
     color: #36393F;
 }
@@ -122,4 +126,10 @@ input:valid + .form-label {
 
 .text-white-50 {
     color: rgba(255, 255, 255, 0.5);
+}
+.bs-github-icon {
+    font-size: 2rem; color: black;
+}
+.bs-email-icon {
+    font-size: 2rem; color: gray;
 }
